@@ -1,4 +1,3 @@
-import '../late/example1.dart';
 
 void main(List<String> args) {
   const fruits = ['Apple', 'Grape', 'Orange', 'Mango'];
