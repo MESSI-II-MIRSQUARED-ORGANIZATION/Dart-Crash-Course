@@ -1,11 +1,14 @@
 void main(List<String> args) {
-  final val = 10;
-  final times5 = val * 5;
-  print(times5);
-  final value2 = 10;
-  print(value2.times5);
-  final value3 = "hello! world";
-  print(value3.reversed);
+  final val = 20;
+  final result2 = val.times5;
+  final result = val * 5;
+  print(result);
+  print('------------');
+  print(result2);
+
+  final strRv = 'Hello World';
+  // o l l e H
+  print(strRv.reversed);
 }
 
 extension on int {

@@ -1,6 +1,7 @@
 void main(List<String> args) {
-  final sumOfInts = [1, 2, 3].sum;
-  final sumOfDoubles = [1.1, 4.2, 3.5].sum;
+  final sumOfInts = [1, 2, 5, 8].sum;
+  final sumOfDoubles = [1.4, 2.8, 5.1, 8.34].sum;
+
   print(sumOfInts);
   print(sumOfDoubles);
 }

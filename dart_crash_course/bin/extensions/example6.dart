@@ -1,7 +1,10 @@
 void main(List<String> args) {
-  final person = Person(name: "Austin ", age: 19);
+  final person = Person(name: "Austin", age: 19);
+  final whoof = Dog(name: "whoof", age: 4);
+
   print(ShortDescription(person).desc);
   print(LongDescription(person).desc);
+  // print(ShortDescription(whoof).desc);
 }
 
 class Person {
@@ -11,12 +14,19 @@ class Person {
   Person({required this.name, required this.age});
 }
 
-//this is a short description
+class Dog {
+  final String name;
+  final int age;
+
+  Dog({required this.name, required this.age});
+}
+
+//Short description
 extension ShortDescription on Person {
   String get desc => "$name, $age";
 }
 
-//this is a long description
+//Long description
 extension LongDescription on Person {
-  String get desc => "Your name is $name and your are $age years old";
+  String get desc => "Your name is $name and you're $age years old.";
 }

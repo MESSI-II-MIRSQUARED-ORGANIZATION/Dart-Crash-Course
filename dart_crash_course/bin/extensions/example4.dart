@@ -1,8 +1,8 @@
 void main(List<String> args) {
   final contains1 = [1, 2, 3].containsDuplicates;
-  final contains2 = [1, 2, 3, 2].containsDuplicates;
+  final contains2 = [1, 2, 3, 1].containsDuplicates;
   final contains3 = ["Austin", "John", "Maria"].containsDuplicates;
-  final contains4 = ["Austin", "John", "Maria", "Austin"].containsDuplicates;
+  final contains4 = ["Austin", "John", "Maria", "John"].containsDuplicates;
 
   print(contains1);
   print(contains2);
